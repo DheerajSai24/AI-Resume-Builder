@@ -6,6 +6,10 @@ A powerful AI-powered resume builder that generates personalized cover letters, 
 ![Vite](https://img.shields.io/badge/Vite-7.1.9-646CFF)
 ![Gemini AI](https://img.shields.io/badge/Gemini-2.0--flash-4285F4)
 
+## 🌐 Live Demo
+
+**[View Live Application](https://dheerajsai24.github.io/AI-Resume-Builder/)**
+
 ## ✨ Features
 
 ### 📝 **AI-Powered Content Generation**
@@ -31,38 +35,119 @@ A powerful AI-powered resume builder that generates personalized cover letters, 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- Google Gemini API Key
+- **Node.js** (v14 or higher) - [Download here](https://nodejs.org/)
+- **npm** or **yarn** (comes with Node.js)
+- **Git** - [Download here](https://git-scm.com/)
+- **Google Gemini API Key** (Free to get)
 
-### Installation
+### 🔑 How to Get Your Google Gemini API Key
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd ai-resume-builder
-   ```
+1. **Visit Google AI Studio**
+   - Go to [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+   - Sign in with your Google account
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+2. **Create API Key**
+   - Click on **"Create API Key"** button
+   - Select **"Create API key in new project"** or choose an existing project
+   - Your API key will be generated instantly
 
-3. **Set up environment variables**
-   
-   Create a `.env` file in the root directory:
+3. **Copy Your API Key**
+   - Click the copy button to copy your API key
+   - **Important**: Keep this key secure and don't share it publicly
+
+4. **Free Tier**
+   - Gemini API offers a generous free tier
+   - No credit card required for getting started
+   - Check [pricing details](https://ai.google.dev/pricing) for usage limits
+
+### 📥 Installation & Setup
+
+#### Step 1: Clone the Repository
+
+Using HTTPS:
+```bash
+git clone https://github.com/DheerajSai24/AI-Resume-Builder.git
+cd AI-Resume-Builder
+```
+
+Or using SSH:
+```bash
+git clone git@github.com:DheerajSai24/AI-Resume-Builder.git
+cd AI-Resume-Builder
+```
+
+Or download ZIP:
+- Click the **"Code"** button on GitHub
+- Select **"Download ZIP"**
+- Extract the ZIP file
+- Open terminal in the extracted folder
+
+#### Step 2: Install Dependencies
+
+```bash
+npm install
+```
+
+Or if you prefer yarn:
+```bash
+yarn install
+```
+
+#### Step 3: Set Up Your API Key
+
+1. **Create a `.env` file** in the root directory (same level as `package.json`)
+
+2. **Add your Gemini API key** to the `.env` file:
    ```env
-   VITE_GEMINI_API_KEY=your_gemini_api_key_here
+   VITE_GEMINI_API_KEY=YOUR_ACTUAL_API_KEY_HERE
    ```
 
-4. **Start the development server**
-   ```bash
-   npm run dev
+3. **Example `.env` file:**
+   ```env
+   VITE_GEMINI_API_KEY=AIzaSyABC123xyz...YourActualKeyHere
    ```
 
-5. **Open your browser**
-   
-   Navigate to `http://localhost:5173`
+   ⚠️ **Important Notes:**
+   - Replace `YOUR_ACTUAL_API_KEY_HERE` with your actual API key from Google AI Studio
+   - Don't use quotes around the API key
+   - Don't add spaces before or after the `=` sign
+   - The `.env` file is already in `.gitignore`, so it won't be committed to Git
+
+#### Step 4: Start the Development Server
+
+```bash
+npm run dev
+```
+
+The server will start on `http://localhost:5173` (or another port if 5173 is busy)
+
+#### Step 5: Open Your Browser
+
+Navigate to the URL shown in the terminal (usually `http://localhost:5173`)
+
+### ✅ Verify Installation
+
+If everything is set up correctly:
+- ✅ The app should load without errors
+- ✅ You can fill in the form fields
+- ✅ Clicking "Generate AI-Powered Resume & Cover Letter" should work
+- ✅ AI-generated content should appear below the form
+
+### ❌ Troubleshooting
+
+**Problem: API Key Error**
+- Make sure your `.env` file is in the root directory
+- Check that the variable name is exactly `VITE_GEMINI_API_KEY`
+- Verify your API key is valid (no extra spaces or quotes)
+- Restart the dev server after creating/modifying `.env`
+
+**Problem: Port Already in Use**
+- Vite will automatically use the next available port
+- Or manually specify a port: `npm run dev -- --port 3000`
+
+**Problem: Dependencies Not Installing**
+- Clear npm cache: `npm cache clean --force`
+- Delete `node_modules` and `package-lock.json`, then run `npm install` again
 
 ## 📖 Usage
 
@@ -166,6 +251,22 @@ Each AI response is divided into:
 |----------|-------------|----------|
 | `VITE_GEMINI_API_KEY` | Your Google Gemini API key | Yes |
 
+## 🚀 Deployment
+
+This project is configured for GitHub Pages deployment.
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to GitHub Pages**
+   ```bash
+   npm run deploy
+   ```
+
+The app will be deployed to: `https://dheerajsai24.github.io/AI-Resume-Builder/`
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -177,6 +278,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Dheeraj Sai**
+- GitHub: [@DheerajSai24](https://github.com/DheerajSai24)
+- Repository: [AI-Resume-Builder](https://github.com/DheerajSai24/AI-Resume-Builder)
 
 ## 🙏 Acknowledgments
 
